@@ -3,7 +3,7 @@
 
 <p align="center">
 
-  <a href="https://mediscope-healthcare.streamlit.app" target="_blank">
+  <a href="https://sahilsuman-mediscope-healthcare.streamlit.app">
     <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
   </a>
 
@@ -28,40 +28,63 @@
 
 ## 🌐 Live Application
 
-### 🚀 [Open MEDISCOPE — Live Demo](https://mediscope-healthcare.streamlit.app)
+### 🚀 [Open MEDISCOPE — Live Demo](https://sahilsuman-mediscope-healthcare.streamlit.app)
 
-> An interactive Streamlit-based healthcare intelligence prototype for patient assessment, disease-category prediction, healthcare analytics, and reference-based medicine information.
+**MEDISCOPE** is an interactive healthcare intelligence application built using Python, Machine Learning and Streamlit.
+
+The application provides a unified workspace for:
+
+- 👤 Patient assessment
+- 🧠 Disease-category prediction
+- 💊 Medicine and care references
+- 📊 Healthcare analytics
+- 🤖 Machine learning model information
+- 📈 Prediction probability analysis
+
+> **Note:** This project is an educational and portfolio prototype. It is not intended for clinical diagnosis, medical treatment, or prescription decisions.
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-**MEDISCOPE** is a Data Science and Machine Learning project that combines patient-level healthcare data, machine learning, reference-based medicine information, and interactive analytics into a single Streamlit application.
+MEDISCOPE is a Data Science and Machine Learning project designed to demonstrate how structured healthcare data can be transformed into an interactive decision-support application.
 
-The system allows users to:
+The project combines:
 
-- 👤 Enter patient information
-- 🧠 Run a machine learning-based disease-category prediction
-- 📊 View prediction probabilities
-- 💊 Explore reference-based medicine information
-- 📈 Analyze healthcare data
-- 🔍 Explore symptom and patient patterns
-- 🤖 Review model configuration and performance
-- 📋 Understand the dataset and project methodology
+**Data Processing → Machine Learning → Prediction → Reference Information → Interactive Analytics**
 
-The application is designed as an **educational and portfolio demonstration of a healthcare ML workflow**, not as a clinical diagnostic or prescription system.
+into a single Streamlit application.
+
+The goal is to demonstrate an end-to-end machine learning workflow rather than simply training a model in a notebook.
+
+---
+
+# 🎯 Project Objectives
+
+The main objectives of this project are:
+
+1. Analyze structured healthcare data.
+2. Perform data cleaning and preprocessing.
+3. Prepare features for machine learning.
+4. Build a disease-category classification model.
+5. Generate prediction probabilities.
+6. Create an interactive patient assessment interface.
+7. Connect predictions with reference-based healthcare information.
+8. Provide interactive healthcare analytics.
+9. Deploy the application using Streamlit.
+10. Demonstrate practical Data Science and Machine Learning skills.
 
 ---
 
 # ✨ Key Features
 
-## 👤 1. Patient Assessment
+## 👤 Patient Assessment
 
-Users can enter available patient attributes and symptoms through an interactive interface.
+The Patient Assessment module allows users to enter available patient attributes and symptoms.
 
-The system processes the information using the trained machine learning pipeline and generates a predicted disease category.
+The application processes the submitted information through the trained machine learning pipeline.
 
-### Input examples
+### Example inputs
 
 - Age
 - Gender
@@ -71,28 +94,29 @@ The system processes the information using the trained machine learning pipeline
 - Breathing difficulty
 - Blood pressure category
 - Cholesterol category
+- Other available patient attributes
 
 ---
 
-## 🧠 2. Disease Prediction
+# 🧠 Disease Prediction
 
-The application uses a **Random Forest Classifier** to generate disease-category predictions.
+The application uses a machine learning classification pipeline to generate a predicted disease category.
 
-The prediction workflow includes:
+### Prediction workflow
 
 ```text
-Patient Input
-      ↓
-Data Validation
-      ↓
-Preprocessing
-      ↓
-Categorical Encoding
-      ↓
+Patient Information
+        ↓
+Input Validation
+        ↓
+Data Preprocessing
+        ↓
+Feature Encoding
+        ↓
 Missing-Value Handling
-      ↓
+        ↓
 Random Forest Classifier
-      ↓
+        ↓
 Disease Prediction
-      ↓
+        ↓
 Probability Ranking
