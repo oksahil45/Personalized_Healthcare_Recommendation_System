@@ -1,62 +1,98 @@
-# MediScope — Personalized Healthcare & Medicine Recommendation System
+# 🩺 MEDISCOPE
+### Personalized Healthcare & Medicine Recommendation System
 
-MediScope is a portfolio-focused machine learning and Streamlit application for exploring a supplied healthcare dataset, predicting disease categories from structured patient attributes, and displaying reference-based care information.
+<p align="center">
 
-> **Important:** This is an educational/portfolio prototype. It is not a clinically validated diagnostic device and does not provide prescriptions.
+  <a href="https://mediscope-healthcare.streamlit.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo"/>
+  </a>
 
-## Features
+  <a href="https://github.com/oksahil45/Personalized-Healthcare-Recommendation-System">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
 
-- Interactive patient assessment
-- Random Forest disease-category prediction
-- Top-5 probability ranking
-- Healthcare analytics with Plotly
-- Symptom and risk-level exploration
-- Data-quality checks
-- Reference-based medicine/care information from the supplied project database
-- Model configuration and transparency page
-- GitHub + Streamlit Cloud ready
+</p>
 
-## Project structure
+<p align="center">
+
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Streamlit-Application-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat-square&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?style=flat-square&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?style=flat-square&logo=plotly&logoColor=white"/>
+
+</p>
+
+---
+
+## 🌐 Live Application
+
+### 🚀 [Open MEDISCOPE — Live Demo](https://mediscope-healthcare.streamlit.app)
+
+> An interactive Streamlit-based healthcare intelligence prototype for patient assessment, disease-category prediction, healthcare analytics, and reference-based medicine information.
+
+---
+
+## 📌 Project Overview
+
+**MEDISCOPE** is a Data Science and Machine Learning project that combines patient-level healthcare data, machine learning, reference-based medicine information, and interactive analytics into a single Streamlit application.
+
+The system allows users to:
+
+- 👤 Enter patient information
+- 🧠 Run a machine learning-based disease-category prediction
+- 📊 View prediction probabilities
+- 💊 Explore reference-based medicine information
+- 📈 Analyze healthcare data
+- 🔍 Explore symptom and patient patterns
+- 🤖 Review model configuration and performance
+- 📋 Understand the dataset and project methodology
+
+The application is designed as an **educational and portfolio demonstration of a healthcare ML workflow**, not as a clinical diagnostic or prescription system.
+
+---
+
+# ✨ Key Features
+
+## 👤 1. Patient Assessment
+
+Users can enter available patient attributes and symptoms through an interactive interface.
+
+The system processes the information using the trained machine learning pipeline and generates a predicted disease category.
+
+### Input examples
+
+- Age
+- Gender
+- Fever
+- Cough
+- Fatigue
+- Breathing difficulty
+- Blood pressure category
+- Cholesterol category
+
+---
+
+## 🧠 2. Disease Prediction
+
+The application uses a **Random Forest Classifier** to generate disease-category predictions.
+
+The prediction workflow includes:
 
 ```text
-Personalized-Healthcare-Recommendation-System/
-├── app.py
-├── train_model.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── data/
-│   ├── Cleaned_Dataset.csv
-│   └── medicine_database.pkl
-└── models/
-    └── disease_model.joblib
-```
-
-## Run locally
-
-```bash
-pip install -r requirements.txt
-python train_model.py
-streamlit run app.py
-```
-
-The repository already contains a trained model, so `python train_model.py` is only needed if you modify the dataset or want to rebuild the model.
-
-## Dataset notes
-
-The supplied CSV contains 349 rows and 14 columns. It contains 49 exact duplicate rows and 116 disease categories. The model-training script removes exact duplicates before training.
-
-Because many disease categories have very few observations, conventional holdout accuracy can be unstable and is intentionally not presented as a clinical-quality metric.
-
-## Streamlit deployment
-
-1. Upload the complete repository to GitHub.
-2. In Streamlit Community Cloud, create a new app.
-3. Select the GitHub repository.
-4. Branch: `main`
-5. Main file: `app.py`
-6. Deploy.
-
-## Technology
-
-Python, Pandas, NumPy, Scikit-learn, Random Forest, Plotly, Streamlit, Joblib.
+Patient Input
+      ↓
+Data Validation
+      ↓
+Preprocessing
+      ↓
+Categorical Encoding
+      ↓
+Missing-Value Handling
+      ↓
+Random Forest Classifier
+      ↓
+Disease Prediction
+      ↓
+Probability Ranking
