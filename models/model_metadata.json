@@ -1,0 +1,27 @@
+{
+  "raw_records": 349,
+  "unique_records_after_exact_duplicate_removal": 300,
+  "exact_duplicates": 49,
+  "columns": [
+    "disease",
+    "fever",
+    "cough",
+    "fatigue",
+    "difficulty_breathing",
+    "age",
+    "gender",
+    "blood_pressure",
+    "cholesterol_level",
+    "outcome_variable",
+    "age_scaled",
+    "bp_scaled",
+    "chol_scaled",
+    "risk_level"
+  ],
+  "disease_classes": 116,
+  "model": "RandomForestClassifier",
+  "n_estimators": 300,
+  "max_depth": 18,
+  "random_state": 42,
+  "training_removed_exact_duplicates": true
+}
